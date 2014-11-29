@@ -13,6 +13,14 @@
         $http.get('js/notifications.json').success(function(data){
             notifications.userNotifications = data;
         });
+
+        this.notification = {};
+
+        this.addNotification = function(notification){
+            notifications.userNotifications.push(this.notification);
+            this.notification = {};
+        };
+
     }]);
 
     app.directive('notificationsContainer', function(){
@@ -20,7 +28,6 @@
            restrict: 'E',
            templateUrl: 'notifications-container.html',
            controller: function(){
-               this.containerClass = 'notify';
 
                this.setContainerClass = function(setClass){
                    switch(setClass) {
@@ -59,5 +66,6 @@
            controllerAs: 'notificationsContainer'
        };
     });
+
 
 })();
