@@ -1,0 +1,25 @@
+<form role="form" name="sendUpdate" ng-submit="sendUpdate.$valid && notifications.addNotification(notification)" novalidate>
+    <div class="form-group col-xs-12 col-md-6">
+        <label for="status">Status</label>
+        <select name="status" ng-model="notifications.notification.status" class="form-control" id="status" required="required">
+            <option value="1">Error</option>
+            <option value="2">Info</option>
+            <option value="3">Warning</option>
+            <option value="4">Success</option>
+        </select>
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-12 col-md-6">
+        <label for="title">Title</label>
+        <input name="title" ng-model="notifications.notification.title" class="form-control" type="text" required="required" value="" />
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-12 col-md-6">
+        <label for="message">Message</label>
+        <textarea name="message" ng-model="notifications.notification.message" cols="30" rows="10" class="form-control" required="required"></textarea>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-xs-12 col-md-6">
+        <button type="submit" class="btn btn-default btn-primary btn-md pull-right">Submit</button>
+    </div>
+</form>

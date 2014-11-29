@@ -67,5 +67,11 @@
        };
     });
 
+    app.directive('notificationsForm', function(){
+        return {
+          restrict: 'E',
+          templateUrl: 'notifications-form.html'
+        };
+    })
 
 })();
