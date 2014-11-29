@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="notifications">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Notifications API</title>
+    <!-- Import Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body ng-controller="NotificationsController as notifications">
+
+    <!-- Start HTML -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <section>
+                    <h2>Account Notifications</h2>
+                    <notifications-container ng-repeat="notification in notifications.userNotifications"></notifications-container>
+                </section>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h2>Send Notifications</h2>
+                <form role="form" action="#" name="sendUpdate">
+                    <div class="form-group col-xs-12 col-md-6">
+                        <label for="title">Title</label>
+                        <input class="form-control" type="text" required="required" value="" />
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-xs-12 col-md-6">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10" class="form-control" required></textarea>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-xs-12 col-md-6">
+                        <label for="status">Status</label>
+                        <select class="form-control" name="status" id="status" required="required">
+                            <option value="1">Error</option>
+                            <option value="2">Info</option>
+                            <option value="3">Warning</option>
+                            <option value="4">Success</option>
+                        </select>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-12 col-md-6">
+                        <button type="submit" class="btn btn-default btn-primary btn-md pull-right">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add JS Files -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+</body>
+</html>

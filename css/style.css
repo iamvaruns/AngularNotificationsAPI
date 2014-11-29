@@ -1,0 +1,49 @@
+* {
+    margin: auto;
+}
+
+.container {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.notify {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid lightgrey;
+    border-left-width: 5px;
+    border-radius: 3px;
+    max-width: 600px;
+}
+
+.danger-border {
+    border-left-color: red;
+}
+
+.info-border {
+    border-left-color: #5bc0de;
+}
+
+.warning-border {
+    border-left-color: #f0ad4e;
+}
+
+.success-border {
+    border-left-color: green;
+}
+
+.danger {
+    color: red;
+}
+
+.info {
+    color: #5bc0de;
+}
+
+.warning {
+    color: #f0ad4e;
+}
+
+.success {
+    color: green;
+}

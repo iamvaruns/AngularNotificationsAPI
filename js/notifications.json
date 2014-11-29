@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Balance below $1000.",
+        "message": "Please update your account balance.",
+        "status": "1"
+    },
+    {
+        "id": 2,
+        "title": "Update your credit card",
+        "message": "Please update your credit card",
+        "status": "2"
+    },
+    {
+        "id": 3,
+        "title": "Account expiring soon",
+        "message": "Your account is expiring soon, please call your Account Rep.",
+        "status": "3"
+    },
+    {
+        "id": 4,
+        "title": "Account in healthy state",
+        "message": "All your configurations are in a healthy state.",
+        "status": "4"
+    }
+
+]
